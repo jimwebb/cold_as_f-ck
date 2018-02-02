@@ -58,22 +58,20 @@ Displayed with frequency, median (black) and 95% confidence (gray)
 
 ### "Boogers" are always cold; "The Devil's Dick" is always hot
 
-Some subjects are strongly biased in one direction or another; that is, they're only used in the "hot" context (or "cold"). 
-
-For instance, "boogers" and "Mars" are always cold and never hot; "the devil's dick" and "two rats (fucking)" are always hot; and other subjects lean one way or the other:
+Some subjects are used in one context (either hot or cold), but not both. "Boogers" and "Mars" are always cold; "the devil's dick" and "two rats (fucking)" are always hot:
 
 ![Hot/Cold Bias](images/hot-cold-bias.png)
 
 
 #### Data set 
 
-Dataset provided in [`data/collected-tweets.csv`](data/collected-tweets.csv). [Contact me](https://twitter.com/jimwebb/) for raw tweets (250MB).
+Dataset provided in [`data/collected-tweets.csv`](data/collected-tweets.csv); tweets with temperatures added are a SQLite database, in [`data/collected-tweets.db`](data/collected-tweets.db). [Contact me](https://twitter.com/jimwebb/) for raw tweets (250MB).
 
 #### Data collection
 
     python src/0-scrape.py
 
-Collects tweets into the folder `raw_firehose` (which you'll need to create). Requires a file in the local directory named `access_tokens.json` with your [Twitter API keys](https://developer.twitter.com/):
+Requires an empty folder in the local directory named `raw_firehose` and a file named `access_tokens.json` with your [Twitter API keys](https://developer.twitter.com/):
 
 ``` python
 {
