@@ -6,7 +6,7 @@ ini_set('display_errors', '1');
 // https://darksky.net/dev/docs#time-machine-request
 global $api_secret; 
 
-$api_secret = "a8611156776a022a38cedc99342075c7";
+$api_secret = "a8611156776a022a38cedc99342075c7"; // this was mine, it's now reset, get your own at https://darksky.net/dev
 $api_url = "https://api.darksky.net/forecast/";
 
 // handle arguments
