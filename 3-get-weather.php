@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 // https://darksky.net/dev/docs#time-machine-request
 global $api_secret; 
 
@@ -108,7 +112,7 @@ function save_weather($tweet) {
   sqlite_insert_parameters($insert, $values);
 
   $insert->execute();
-  
+
   echo "did " . $tweet['id'] . " ok!\r\n";
 
 }
